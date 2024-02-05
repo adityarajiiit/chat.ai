@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <h1 class="app-title" id="app-title">Chat.ai</h1>
+
+    <div class="provider-buttons">
+
+            <button id="goo" class="provider-btn">
+                <img src="google.png" class="google-btn-logo">
+                Sign in with Google
+            </button>
+
+
+
+    </div>
+    <br>
+    <br>
+    <div class="auth-fields-and-buttons">
+        <form method="post" action="/submit">
+            <input id="email" type="email" placeholder="Email" name="email">
+            <br>
+            <br>
+            <input id="password" type="password" placeholder="Password" name="password">
+            <br>
+            <br><br>
+            <input id="sign-in-btn" class="primary-btn" type="submit" value="Sign In">
+            <br>
+            <br>
+
+            <input id="create-account-btn" class="secondary-btn" type="submit" value="Create Account">
+            <input type="hidden" id="dus" name="risha">
+            <input type="hidden" name="adi" id="adi">
+        </form>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script >
+    document.getElementById("sign-in-btn").addEventListener("click",function (event) {
+
+        document.getElementById("dus").value="sign";
+    });
+
+    document.getElementById("create-account-btn").addEventListener("click",function (event) {
+
+        document.getElementById("dus").value="create";
+    });
+    // document.getElementById("goo").addEventListener("click",function (event) {
+    //
+    //     document.getElementById("dus").value="google";
+    // });
+
+</script>
+<script src="script.js" defer type="module"></script>
+
+</body>
+</html>
